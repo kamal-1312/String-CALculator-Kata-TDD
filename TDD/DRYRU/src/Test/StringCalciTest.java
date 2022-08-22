@@ -35,4 +35,27 @@ public void StringshouldReturnSumOfThree()
     assertEquals(1+2+3, StringCalci.CalculateSumOfThree("1,2,3"));
 }
 
+ //	Throw exception for negative numbers
+ @Test
+ public void StringshouldThrowExceptionForNegativeNumbers()
+ {
+     try{
+         StringCalci.ADD("1,-2,3");
+         fail("Exception expected");
+     }catch(RuntimeException ignored) {
+     }
+ }
+
+ //	Exception message should have negative number
+ @Test
+ public void StringshouldHaveNegativeNumbersInException()
+ {
+     try{
+         StringCalci.ADD("-1,-2,3");
+         fail("Exception expected");
+     }catch(RuntimeException e) {
+         assertEquals("negatives not allowed: -1, -2",e.getMessage());
+     }
+ }
+
 }
