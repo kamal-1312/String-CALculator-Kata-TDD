@@ -21,4 +21,12 @@ public class StringCalciTest {
     }
 
     
+
+//For two String it will return Sum
+@Test
+public void StringshouldReturnSumOfTwo()
+{
+    assertEquals(1+2, StringCalci.CalculateSumOfTwo("1,2"));
+}
+
 }

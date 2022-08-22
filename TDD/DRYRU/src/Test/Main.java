@@ -6,6 +6,7 @@ public class Main {
     {
         System.out.println( StringCalci.add("") );
         System.out.println( StringCalci.add("1") );
+        System.out.println(StringCalci.CalculateSumOfTwo("8,8"));
 
 
     }
