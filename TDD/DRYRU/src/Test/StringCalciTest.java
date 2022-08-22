@@ -12,4 +12,13 @@ public class StringCalciTest {
     public void shouldReturnZeroOnEmptyString() {
         assertEquals(0, StringCalci.add(""));
     }
+
+    //For Single String It will return  1
+    @Test
+    public void shouldReturnOne()
+    {
+        assertEquals(1, StringCalci.add("1"));
+    }
+
+    
 }
