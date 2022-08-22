@@ -14,12 +14,19 @@ public class StringCalci {
         }
         return 10;
     }
-    
+
     public static int CalculateSumOfTwo(String s) {
         String[] SumOfTwo = s.split(",");
 
 
         return (parseInt(SumOfTwo[0]) + parseInt(SumOfTwo[1]));
+
+    }
+
+    public static int CalculateSumOfThree(String s) {
+        String[] SumOfTwo = s.split(",");
+
+        return (parseInt(SumOfTwo[0]) + parseInt(SumOfTwo[1]) + parseInt(SumOfTwo[2]));
 
     }
 

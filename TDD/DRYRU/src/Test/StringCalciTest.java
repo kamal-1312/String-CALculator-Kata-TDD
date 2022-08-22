@@ -29,4 +29,10 @@ public void StringshouldReturnSumOfTwo()
     assertEquals(1+2, StringCalci.CalculateSumOfTwo("1,2"));
 }
 
+@Test
+public void StringshouldReturnSumOfThree()
+{
+    assertEquals(1+2+3, StringCalci.CalculateSumOfThree("1,2,3"));
+}
+
 }
